@@ -1,12 +1,12 @@
 Feature: Google searching
 
-  Scenario: Searching dupa word
+  Scenario: Searching proba word
     Given Google homepage is open
-    When Search word dupa is entered
+    When Search word proba  is entered
     And Button search is clicked
     Then Webpage with results is visible
     And The following results are shown
       | related |
-      | dupa1   |
-      | dupa2   |
-      | dupa3   |
+      | proba1  |
+      | proba2  |
+      | proba3  |

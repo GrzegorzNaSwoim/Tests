@@ -9,9 +9,9 @@ def google_homepage_is_open(context):
     context.homepage.select_language()
 
 
-@when('Search word dupa is entered')
+@when('Search word proba is entered')
 def search_word_dupa_is_entered(context):
-    context.homepage.input_search_text('dupa')
+    context.homepage.input_search_text('proba')
 
 
 @when('Button search is clicked')

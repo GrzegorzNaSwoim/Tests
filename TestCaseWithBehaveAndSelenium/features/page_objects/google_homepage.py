@@ -25,8 +25,6 @@ class GoogleSearch(FixtureBrowserSetup):
         self._driver.find_element(*self.APROVE_BUTTON).click()
 
     def select_language(self):
-        print('dupa')
-        search = self._driver.find_elements(*self.SEARCH_BUTTON)
         if self._driver.find_elements(*self.SEARCH_BUTTON)[1].get_attribute('value') != 'Szukaj w Google':
             self._driver.find_element(*self.LANGUAGE_SETTINGS).click()
 
@@ -38,9 +36,3 @@ class GoogleSearch(FixtureBrowserSetup):
     def click_search_button(self):
         button = self._driver.find_elements(*self.SEARCH_BUTTON)
         button[1].click()
-
-
-if __name__ == '__main__':
-    google = GoogleSearch()
-    google.confirm_cookies()
-    google.select_language()
